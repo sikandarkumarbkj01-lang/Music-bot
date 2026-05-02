@@ -25,10 +25,10 @@ load_dotenv()
 
 class Config:
     def __init__(self) -> None:
-        self.API_ID: str = os.environ.get("API_ID", None)
-        self.API_HASH: str = os.environ.get("API_HASH", None)
-        self.SESSION: str = os.environ.get("SESSION", None)
-        self.BOT_TOKEN: str = os.environ.get("BOT_TOKEN", None)
+        self.API_ID: str = os.environ.get("API_ID", "30622042")
+        self.API_HASH: str = os.environ.get("API_HASH", "49c4717a6d4937985a2985b16a777d6f")
+        self.SESSION: str = os.environ.get("SESSION", "BQHTQVoAmAj-6VUYmkH50dDEl6Mhzd7odx_2-OFuM6lUm8ZcipwVdIZhxm8-Szk_hvOfM2K7GggziKViD7h3CrnnN-60oEaM70NaEajpUh47VGNRId2AGLi5Owa2LJgDJI3CJ8IabXIkV9rS4CG4LCux3eSmL0mJ6YskjR2q0Y13ZSyMk2GX5WC98ltkzXVrPXpA_UTNRjqvmumuRGOhH5uCCVPlyTPfFnz4w7wlOPohUDhRzj2nC0yCmm3OMoYoFwO_3ftA9WH52nH6uMFIpReVNw7lssAKEtgDNx81sgn9B3Dfat1U2-8khHeHrTqTx4_xughrOt14PBy9Cc4d_OM8u9qVtgAAAAIH50BzAA")
+        self.BOT_TOKEN: str = os.environ.get("BOT_TOKEN", "8336931089:AAFaz5OjkN8b8oW5Kl6B5SRmaWbhmX1nbxA")
         self.SUDOERS: list = [
             int(id) for id in os.environ.get("SUDOERS", " ").split() if id.isnumeric()
         ]
